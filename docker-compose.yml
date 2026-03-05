@@ -12,7 +12,6 @@ services:
     ports:
       - "5432:5432"
 
-
   # Erreur trouvée : Redis nécessite un backend lancé, et pour lancer le backend il faut que redis soit lancé. Donc problème
   redis:
     image: redis:7-alpine
@@ -24,7 +23,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      DATABASE_URL: "postgres://taskuser:taskpass@database:5432/taskdb"
+      DATABASE_URL: "postgres://taskuser:taskpass@db:5432/taskdb"
     depends_on:
       - db
       - redis
