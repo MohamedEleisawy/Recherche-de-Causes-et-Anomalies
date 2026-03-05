@@ -171,8 +171,6 @@ def warmup_cache():
     try:
         r = redis.from_url(REDIS_URL)
         r.ping()
-        import urllib.request
-        urllib.request.urlopen("http://localhost:8000/api/stats")
     except Exception as e:
         print(f"Cache warmup failed (non-critical): {e}")
 
