@@ -2,7 +2,7 @@ FROM node:18-alpine as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-#  en anglais : missing package-lock.json in frontend folder -> replace npm ci with npm install in frontend Dockerfile
+# missing package-lock.json in frontend folder -> replace npm ci with npm install in frontend Dockerfile
 COPY . .
 RUN npm run build
 FROM nginx:alpine
