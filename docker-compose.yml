@@ -13,12 +13,12 @@ services:
     ports:
       - "5432:5432"
 
+
+  # Erreur trouvée : Redis nécessite un backend lancé, et pour lancer le backend il faut que redis soit lancé. Donc problème
   redis:
     image: redis:7-alpine
     ports:
       - "6379:6379"
-    depends_on:
-      - backend
 
   backend:
     build: ./backend
