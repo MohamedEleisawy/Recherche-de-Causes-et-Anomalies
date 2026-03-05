@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T10:17:44.661775+00:00",
+  "generated_at": "2026-03-05T12:58:04.542278+00:00",
   "checks": {
     "backend_builds": false,
     "frontend_builds": false,
@@ -16,7 +16,7 @@
     "no_duplicates": false,
     "no_memory_leak": false,
     "db_ready_check": false,
-    "errors_logged": true,
+    "errors_logged": false,
     "timezone_filter": false,
     "no_circular_dep": false
   }
